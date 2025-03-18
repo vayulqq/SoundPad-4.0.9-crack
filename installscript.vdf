@@ -1,0 +1,24 @@
+"InstallScript"
+{
+	"Run Process"
+	{
+		"Update4.0"
+		{
+			"HasRunKey"		"HKEY_CURRENT_USER\\Software\\Valve\\Steam\\Apps\\629520"
+			"process 1"		"%INSTALLDIR%\\Soundpad.exe"
+			"command 1"		"-r -s"
+		}
+	}
+	"Run Process On Uninstall"
+	{
+		"UninstallApo"
+		{
+			"process 1"		"%INSTALLDIR%\\Soundpad.exe"
+			"command 1"		"-u -s"
+		}
+	}
+}
+"kvsignatures"
+{
+	"InstallScript"		"07638db84c3e09caa730be810a67fb4f098d8c22bacf9012ad30ae9f4210b4f7378cc8a74937ca33d3578a38ccbbe56eeeac900f92774cf7ae2f4dd498a126493446076a7b81d3b01ae9444bae90519d6d84d4008355ce94fa5f6854408e2e724ed95427763b0013808280ec0daea37473ef2168780ce021870886f5268e9d8f"
+}
